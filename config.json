@@ -1,0 +1,33 @@
+{
+  "base_url": "https://careercopilot.cc",
+  "site_title": "Career Copilot",
+  "site_description": "AI-powered career coaching and interview practice platform. Get personalized guidance, mock interviews, and a clear roadmap to your next role — powered by Google Gemini.",
+  "site_keywords": [
+    {
+      "keyword": "career coaching"
+    },
+    {
+      "keyword": "interview practice"
+    },
+    {
+      "keyword": "AI career coach"
+    },
+    {
+      "keyword": "job search help"
+    },
+    {
+      "keyword": "career change"
+    },
+    {
+      "keyword": "mock interview"
+    },
+    {
+      "keyword": "Google Gemini"
+    },
+    {
+      "keyword": "resume tips"
+    }
+  ],
+  "posts_per_page": 5,
+  "instagram_account": "careercopilot_"
+}

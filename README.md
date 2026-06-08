@@ -1,55 +1,38 @@
-# Career Copilot — Landing Site
+# Career Copilot — Website
 
-Static marketing website for [Career Copilot](https://careercopilot.cc) — an AI-powered career coaching platform built with Google Gemini.
+Marketing website and blog for [Career Copilot](https://careercopilot.cc) — an AI-powered career coaching platform built with Google Gemini.
 
-## What's Included
+Based on [nextjs-netlify-blog-template](https://github.com/wutali/nextjs-netlify-blog-template).
 
-- **Landing page** — Hero, How It Works (3-step flow), 6 feature cards, 3 audience segments, waitlist sign-up CTA
-- **Legal pages** (Paddle compliance) — Terms of Service, Privacy Policy, Refund Policy, Contact Us
-- **Netlify CMS** (Decap v3) — Edit legal pages via markdown through `/admin/`
-- **Netlify Forms** — Waitlist sign-up and contact form submissions
-- **SEO** — Meta tags, Open Graph, Twitter Card, JSON-LD structured data, canonical URLs
-- **Responsive design** — Mobile hamburger nav, single-column reflow
+## Features
 
-## Quick Start
+- **Blog with tags & authors** — Content managed via Netlify CMS (Decap)
+- **SEO optimized** — JSON-LD, Open Graph, meta tags
+- **CMS** — Edit posts, tags, authors, and site config via `/admin/`
+- **Static export** — Deployed as static files via Netlify
+
+## Getting Started
 
 ```bash
-# Serve locally
-cd site && python3 -m http.server 8080
-# Open http://localhost:8080
+npm install
+npm run dev
+# Open http://localhost:3000
 ```
 
 ## Deploy to Netlify
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/geminixprise-team/career-copilot-site)
-
 1. Connect this repo to Netlify
-2. **Publish directory:** `site`
-3. No build command needed (static files)
+2. Build command: `npm run export`
+3. Publish directory: `dist`
 4. Enable **Netlify Identity** + **Git Gateway** for CMS access at `/admin/`
-5. Enable **Netlify Forms** for waitlist and contact submissions
 
-## Project Structure
+## Content Management
 
-```
-├── netlify.toml          # Netlify config (publish dir, redirects, headers)
-└── site/
-    ├── index.html        # Landing page
-    ├── css/styles.css    # Styles (CSS variables, responsive grid)
-    ├── js/main.js        # Interactivity (nav, forms, scroll)
-    ├── admin/            # Decap CMS (config.yml, index.html)
-    ├── terms/            # Terms of Service
-    ├── privacy/          # Privacy Policy
-    ├── refund/           # Refund Policy
-    └── contact/          # Contact form
-```
-
-## Tech Stack
-
-- Pure HTML/CSS/JS (no build step)
-- [Netlify](https://netlify.com) for hosting & forms
-- [Decap CMS](https://decapcms.org) v3.14.0 (pinned with SRI) for content management
-- [Paddle](https://paddle.com) as merchant of record (referenced in legal pages)
+All content is managed via Netlify CMS at `/admin/`:
+- **Posts** — Blog posts in MDX format (`content/posts/`)
+- **Tags** — Content categories (`meta/tags.yml`)
+- **Authors** — Author profiles (`meta/authors.yml`)
+- **Site Config** — Title, description, keywords (`config.json`)
 
 ## Social
 
