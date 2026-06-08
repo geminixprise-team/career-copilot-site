@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: main
+  branch: devin/1780932348-add-landing-site
 
 media_folder: "site/images"
 public_folder: "/images"
