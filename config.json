@@ -1,19 +1,20 @@
 {
-  "base_url": "https://wutali-nextjs-netlify-blog.netlify.app",
-  "site_title": "Next.js Netlify Blog",
-  "site_description": "Next.js blog template for Netlify",
+  "base_url": "https://careercopilot.cc",
+  "site_title": "Career Copilot | AI-powered Coach and Roadmap to your next job!",
+  "site_description": "With the power of AI, it curates the user a personalized roadmap, gamified with XP and levels, gets you the skills you need, and get you coached and ready for your dream job!",
   "site_keywords": [
     {
-      "keyword": "Next.js"
+      "keyword": "Career Copilot"
     },
     {
-      "keyword": "Netlify"
+      "keyword": "AI-powered Coach"
     },
     {
-      "keyword": "React"
+      "keyword": "Career Roadmap"
     }
   ],
   "posts_per_page": 5,
-  "twitter_account": "@my-account",
-  "github_account": "wutali"
+  "twitter_account": "@careercopil0t",
+  "instagram_account": "@careercopilot_",
+  "youtube_account": "@careercopilotofficial"
 }
