@@ -31,8 +31,8 @@ export default function PostLayout({
   description = "",
   children,
 }: Props) {
-  const keywords = tags.map(it => getTag(it).name);
-  const authorName = getAuthor(author).name;
+  const keywords = tags.map(it => getTag(it)?.name ?? it);
+  const authorName = getAuthor(author)?.name ?? author;
   return (
     <Layout>
       <BasicMeta
@@ -68,17 +68,21 @@ export default function PostLayout({
                 <Date date={date} />
               </div>
               <div>
-                <Author author={getAuthor(author)} />
+                <Author author={getAuthor(author) ?? { slug: author, name: author, introduction: "" }} />
               </div>
             </div>
           </header>
           <div className={styles.content}>{children}</div>
           <ul className={"tag-list"}>
-            {tags.map((it, i) => (
-              <li key={i}>
-                <TagButton tag={getTag(it)} />
-              </li>
-            ))}
+            {tags.map((it, i) => {
+              const tag = getTag(it);
+              if (!tag) return null;
+              return (
+                <li key={i}>
+                  <TagButton tag={tag} />
+                </li>
+              );
+            })}
           </ul>
         </article>
         <footer>

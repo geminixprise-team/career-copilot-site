@@ -11,3 +11,7 @@ tags:
     name: mdx
   - slug: markdown
     name: markdown
+  - slug: announcements
+    name: announcements
+  - slug: ai
+    name: ai
