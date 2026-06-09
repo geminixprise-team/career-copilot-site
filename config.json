@@ -1,33 +1,19 @@
 {
-  "base_url": "https://careercopilot.cc",
-  "site_title": "Career Copilot",
-  "site_description": "AI-powered career coaching and interview practice platform. Get personalized guidance, mock interviews, and a clear roadmap to your next role — powered by Google Gemini.",
+  "base_url": "https://wutali-nextjs-netlify-blog.netlify.app",
+  "site_title": "Next.js Netlify Blog",
+  "site_description": "Next.js blog template for Netlify",
   "site_keywords": [
     {
-      "keyword": "career coaching"
+      "keyword": "Next.js"
     },
     {
-      "keyword": "interview practice"
+      "keyword": "Netlify"
     },
     {
-      "keyword": "AI career coach"
-    },
-    {
-      "keyword": "job search help"
-    },
-    {
-      "keyword": "career change"
-    },
-    {
-      "keyword": "mock interview"
-    },
-    {
-      "keyword": "Google Gemini"
-    },
-    {
-      "keyword": "resume tips"
+      "keyword": "React"
     }
   ],
   "posts_per_page": 5,
-  "instagram_account": "careercopilot_"
+  "twitter_account": "@my-account",
+  "github_account": "wutali"
 }
