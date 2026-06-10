@@ -32,6 +32,22 @@ export default function Navigation() {
               contact
             </Link>
           </li>
+          <li>
+            <Link href="/terms-of-service" className={
+                  router.pathname === "/terms-of-service" ? "active" : null
+                }
+              >
+              terms
+            </Link>
+          </li>
+          <li>
+            <Link href="/privacy-policy" className={
+                  router.pathname === "/privacy-policy" ? "active" : null
+                }
+              >
+              privacy
+            </Link>
+          </li>
         </ul>
         <style jsx>
           {`
