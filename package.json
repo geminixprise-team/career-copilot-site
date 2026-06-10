@@ -1,13 +1,12 @@
 {
-  "name": "my-app",
-  "version": "0.1.1",
+  "name": "career-copilot-site",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "devy": "next dev -p 8080",
     "build": "next build",
     "start": "next start",
-    "export": "next build && next export -o ./dist",
     "test": "jest"
   },
   "dependencies": {
