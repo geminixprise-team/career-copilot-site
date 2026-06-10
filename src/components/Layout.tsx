@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Navigation from "./Navigation";
+import Copyright from "./Copyright";
 
 type Props = {
   children: React.ReactNode;
@@ -17,7 +18,12 @@ export default function Layout({ children }: Props) {
       <nav>
         <Navigation />
       </nav>
-      <main>{children}</main>
+      <div className="content">
+        <main>{children}</main>
+        <footer>
+          <Copyright />
+        </footer>
+      </div>
       <style jsx>
         {`
           .root {
@@ -26,16 +32,24 @@ export default function Layout({ children }: Props) {
             box-sizing: border-box;
             height: 100%;
           }
+          .content {
+            display: flex;
+            flex-direction: column;
+            min-height: 100%;
+          }
           main {
             display: flex;
-            min-height: 100%;
+            flex: 1 0 auto;
+          }
+          footer {
+            padding: 2rem 1.5rem 0;
           }
           @media (min-width: 769px) {
             .root {
               display: flex;
               flex: 1 0 auto;
             }
-            main {
+            .content {
               flex: 1 0 auto;
             }
           }

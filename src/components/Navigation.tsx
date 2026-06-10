@@ -24,6 +24,38 @@ export default function Navigation() {
               blog
             </Link>
           </li>
+          <li>
+            <Link href="/faq" className={
+                  router.pathname === "/faq" ? "active" : null
+                }
+              >
+              faq
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact-us" className={
+                  router.pathname === "/contact-us" ? "active" : null
+                }
+              >
+              contact
+            </Link>
+          </li>
+          <li>
+            <Link href="/terms-of-service" className={
+                  router.pathname === "/terms-of-service" ? "active" : null
+                }
+              >
+              terms
+            </Link>
+          </li>
+          <li>
+            <Link href="/privacy-policy" className={
+                  router.pathname === "/privacy-policy" ? "active" : null
+                }
+              >
+              privacy
+            </Link>
+          </li>
         </ul>
         <style jsx>
           {`
