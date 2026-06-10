@@ -29,7 +29,7 @@ export function SocialList({}) {
         target="_blank"
         rel="noopener"
       >
-        <img src={Youtube.src || Youtube} width={24} height={24} alt="Youtube" />
+        <img src={Youtube.src} width={24} height={24} alt="Youtube" />
       </a>
       <style jsx>{`
         a {
