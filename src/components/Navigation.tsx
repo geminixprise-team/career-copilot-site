@@ -25,6 +25,14 @@ export default function Navigation() {
             </Link>
           </li>
           <li>
+            <Link href="/faq" className={
+                  router.pathname === "/faq" ? "active" : null
+                }
+              >
+              faq
+            </Link>
+          </li>
+          <li>
             <Link href="/contact-us" className={
                   router.pathname === "/contact-us" ? "active" : null
                 }
