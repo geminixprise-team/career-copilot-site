@@ -18,10 +18,12 @@ export default function Layout({ children }: Props) {
       <nav>
         <Navigation />
       </nav>
-      <main>{children}</main>
-      <footer>
-        <Copyright />
-      </footer>
+      <div className="content">
+        <main>{children}</main>
+        <footer>
+          <Copyright />
+        </footer>
+      </div>
       <style jsx>
         {`
           .root {
@@ -30,12 +32,16 @@ export default function Layout({ children }: Props) {
             box-sizing: border-box;
             height: 100%;
           }
-          main {
+          .content {
             display: flex;
+            flex-direction: column;
             min-height: 100%;
           }
+          main {
+            display: flex;
+            flex: 1 0 auto;
+          }
           footer {
-            margin-top: auto;
             padding: 2rem 1.5rem 0;
           }
           @media (min-width: 769px) {
@@ -43,7 +49,7 @@ export default function Layout({ children }: Props) {
               display: flex;
               flex: 1 0 auto;
             }
-            main {
+            .content {
               flex: 1 0 auto;
             }
           }
